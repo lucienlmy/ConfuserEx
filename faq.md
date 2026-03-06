@@ -92,7 +92,7 @@ A GUI is available since version 0.2.0. Go check it out!
 What about documentation?
 ---
 
-Documentation is now available at [the project wiki](https://github.com/mkaring/ConfuserEx/wiki)!
+Documentation is now available at [the project wiki](https://github.com/kant2002/ConfuserEx/wiki)!
 If you still got any problem, please don’t hesitate to contact me or open an issue!
 
 {% include scrollToTop.html %}
