@@ -22,7 +22,7 @@ and the [ConfuserEx](https://github.com/yck1509/ConfuserEx) project.
 
 Features
 --------
-ConfuserEx supports .NET Framework from 2.0 - 4.8, .NET Standard, .NET Core and Mono.
+ConfuserEx3 supports .NET Framework from 4.7.2 - 4.8, .NET Standard, .NET and Mono. I did drop support for earlier version of .NET Framework, and if you need it you can use [ConfuserEx2](https://github.com/mkaring/ConfuserEx)
 It supports most of the protections you'll find in commerical protectors, and some more!
 
 <div class="container-fluid">
@@ -68,9 +68,8 @@ It supports most of the protections you'll find in commerical protectors, and so
 
 Downloads
 ---------
-You could obtain the latest source code and releases at [GitHub project page](https://github.com/mkaring/ConfuserEx/releases).
-You may find the bleeding edge builds at [the CI Server](https://ci.appveyor.com/project/mkaring/confuserex).
-ConfuserEx requires .NET Framework 4.6.1 or later to run. The CLI interface runs also on .NET Core 2.2 on multiple platforms.
+You could obtain the latest source code and releases at [GitHub project page](https://github.com/kant2002/ConfuserEx/releases).
+ConfuserEx requires .NET Framework 4.7.2 or later to run. The CLI interface runs also on .NET Core 2.2 on multiple platforms.
 It might be helpful to read the [FAQ]({{ BASE_PATH }}/faq/)!
 
 ---
@@ -85,6 +84,5 @@ You could also contribute to the project by creating pull requests and [reportin
 
 Donation
 ---------
-If you find ConfuserEx 2 helpful and want to donate to support my work on the project you can support me on
-[open collective](https://opencollective.com/confuserex), [GitHub Sponsors](https://github.com/sponsors/mkaring) or 
-you can [buy me a coffee](http://buymeacoff.ee/fFUnXMCdW) :coffee:.
+If you find ConfuserEx 3 helpful and want to donate to support my work on the project you can support me on
+[open collective](https://opencollective.com/confuserex), [GitHub Sponsors](https://github.com/sponsors/mkaring) :coffee:. That's open collectiev of Confuser 2 maintainer, and when I have my personal one, I'm fine with person who help maintain have it's own share of success.

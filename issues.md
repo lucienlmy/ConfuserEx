@@ -6,13 +6,13 @@ permalink : /issues/
 ---
 {% include setup %}
 
-If your application does not work with ConfuserEx 2, feel free to submit a bug 
-report! Your help will greatly help ConfuserEx 2 to improve!
+If your application does not work with ConfuserEx 3, feel free to submit a bug 
+report! Your help will greatly help ConfuserEx 3 to improve!
 
 Before you open an issue, please check if your report includes the following 
 information:
 
-1. The version of ConfuserEx 2 you are using. (If build from source, use commit 
+1. The version of ConfuserEx 3 you are using. (If build from source, use commit 
    hash instead)
 2. The protection and packer settings you used.
 3. The input and output sample files that does not work.  
@@ -24,5 +24,5 @@ information:
    of .NET you used.
 
 You could submit the bug report at the 
-[GitHub issue tracker](https://github.com/mkaring/ConfuserEx/issues). I'll try 
+[GitHub issue tracker](https://github.com/kant2002/ConfuserEx/issues). I'll try 
 to fix it as soon as possible!

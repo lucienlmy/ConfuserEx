@@ -11,14 +11,14 @@ permalink: /faq/
 
 ---
 
-What is ConfuserEx?
+What is ConfuserEx3?
 ---
 
-ConfuserEx is an open-source protector for .NET applications. It offers 
+ConfuserEx3 is an open-source protector for .NET applications. It offers 
 advanced security to applications written in C#, VB, F#, and other .NET 
 languages.  
-ConfuserEx is the successor to [Confuser](http://confuser.codeplex.com) 
-project. While Confuser is widely regarded as one of the strongest 
+ConfuserEx3 vis the successor to [Confuser](http://confuser.codeplex.com) 
+project. It's heritage is rocky. Confuser was replaced by ConfuserEx, which after that was replaced by ConfuserEx2 which eventually faded and have some issues which need to be taken care of after .NET world come into full force with CLR metadata slight changes. While Confuser is widely regarded as one of the strongest 
 obfuscators available in .NET, ConfuserEx continues to provide excellent 
 protections to .NET applications.
 
