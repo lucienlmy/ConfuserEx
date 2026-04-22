@@ -17,7 +17,8 @@ namespace ConfuserEx {
 			app.Project = new ProjectVM(new ConfuserProject(), null);
 			app.FileName = "Unnamed.crproj";
 
-			app.Tabs.Add(new ProjectTabVM(app));
+			var uiServices = new OokiiUIServices();
+			app.Tabs.Add(new ProjectTabVM(app, uiServices));
 			app.Tabs.Add(new SettingsTabVM(app));
 			app.Tabs.Add(new ProtectTabVM(app));
 			app.Tabs.Add(new AboutTabVM(app));

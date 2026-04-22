@@ -15,8 +15,12 @@ using Ookii.Dialogs.Wpf;
 
 namespace ConfuserEx.ViewModel {
 	public class ProjectTabVM : TabViewModel {
-		public ProjectTabVM(AppVM app)
-			: base(app, "Project") { }
+		private readonly IUIServices uiServices;
+
+		public ProjectTabVM(AppVM app, IUIServices uiServices)
+			: base(app, "Project") {
+			this.uiServices = uiServices;
+		}
 
 		public ICommand DragDrop {
 			get {
@@ -35,26 +39,43 @@ namespace ConfuserEx.ViewModel {
 
 		public ICommand ChooseBaseDir {
 			get {
-				return new RelayCommand(() => {
-					var fbd = new VistaFolderBrowserDialog();
-					fbd.SelectedPath = App.Project.BaseDirectory;
-					if (fbd.ShowDialog() ?? false) {
-						App.Project.BaseDirectory = fbd.SelectedPath;
-						App.Project.OutputDirectory = Path.Combine(App.Project.BaseDirectory, "Confused");
+#if NET
+				return new AsyncRelayCommand(async () => {
+					var selectedPath = await uiServices.OpenFolderPickerAsync("Select base directory", App.Project.BaseDirectory);
+					if (selectedPath != null) {
+						App.Project.BaseDirectory = selectedPath;
+						App.Project.OutputDirectory = Path.Combine(selectedPath, "Confused");
 					}
 				});
+#else
+				return new RelayCommand(() => {
+					var selectedPath = uiServices.OpenFolderPickerAsync("Select base directory", App.Project.BaseDirectory).Result;
+					if (selectedPath != null) {
+						App.Project.BaseDirectory = selectedPath;
+						App.Project.OutputDirectory = Path.Combine(selectedPath, "Confused");
+					}
+				});
+#endif
 			}
 		}
 
 		public ICommand ChooseOutputDir {
 			get {
-				return new RelayCommand(() => {
-					var fbd = new VistaFolderBrowserDialog();
-					fbd.SelectedPath = App.Project.OutputDirectory;
-					if (fbd.ShowDialog() ?? false) {
-						App.Project.OutputDirectory = fbd.SelectedPath;
+#if NET
+				return new AsyncRelayCommand(async () => {
+					var selectedPath = await uiServices.OpenFolderPickerAsync("Select output directory", App.Project.OutputDirectory);
+					if (selectedPath != null) {
+						App.Project.OutputDirectory = selectedPath;
 					}
 				});
+#else
+				return new RelayCommand(() => {
+					var selectedPath = uiServices.OpenFolderPickerAsync("Select output directory", App.Project.OutputDirectory).Result;
+					if (selectedPath != null) {
+						App.Project.OutputDirectory = selectedPath;
+					}
+				});
+#endif
 			}
 		}
 
