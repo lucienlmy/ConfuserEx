@@ -2,6 +2,7 @@
   <PropertyGroup>
     <UseArtifactsOutput>true</UseArtifactsOutput>
     <!--<LangVersion>11.0</LangVersion>-->
+    <NoWarn>$(NoWarn);NU1702</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Label="Assembly Information">
@@ -20,4 +21,9 @@
     <SourceLinkServerType>GitHub</SourceLinkServerType>
     <SourceLinkOriginUrl>$(RepositoryUrl)</SourceLinkOriginUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <NuGetAuditSuppress Include="https://www.myget.org/F/dnlib-kant2002/api/v3/index.json" />
+  </ItemGroup>
+
 </Project>

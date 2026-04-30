@@ -12,7 +12,7 @@
     <Product>ConfuserEx - MSBuild Integration</Product>
     <Description>This package contains the integration of ConfuserEx into the MSBuild build procedure. It allows automatically obfuscating the assemblies during the build.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/mkaring/ConfuserEx</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/kant2002/ConfuserEx</PackageProjectUrl>
     <PackageTags>Obfuscation Confuser ConfuserEx</PackageTags>
     <DevelopmentDependency>true</DevelopmentDependency>
     <IncludeBuildOutput>false</IncludeBuildOutput>
@@ -30,7 +30,7 @@
     <ProjectReference Include="..\Confuser.Core\Confuser.Core.csproj" PrivateAssets="all" />
     <ProjectReference Include="..\Confuser.Protections\Confuser.Protections.csproj" PrivateAssets="all" />
     <ProjectReference Include="..\Confuser.Renamer\Confuser.Renamer.csproj" PrivateAssets="all" />
-    <ProjectReference Include="..\Confuser.Runtime\Confuser.Runtime.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\Confuser.Runtime\Confuser.Runtime.csproj" ReferenceOutputAssembly="false" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
